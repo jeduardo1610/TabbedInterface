@@ -23,10 +23,17 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
 
     private fun configureTabLayout() {
 
-        tab_layout.addTab(tab_layout.newTab().setText("Tab 1 Item"))
+        //Setting up tabs with text as title
+        /*tab_layout.addTab(tab_layout.newTab().setText("Tab 1 Item"))
         tab_layout.addTab(tab_layout.newTab().setText("Tab 2 Item"))
         tab_layout.addTab(tab_layout.newTab().setText("Tab 3 Item"))
-        tab_layout.addTab(tab_layout.newTab().setText("Tab 4 Item"))
+        tab_layout.addTab(tab_layout.newTab().setText("Tab 4 Item"))*/
+
+        //Setting up tabs with icons header
+        tab_layout.addTab(tab_layout.newTab().setIcon(android.R.drawable.ic_dialog_email))
+        tab_layout.addTab(tab_layout.newTab().setIcon(android.R.drawable.ic_dialog_dialer))
+        tab_layout.addTab(tab_layout.newTab().setIcon(android.R.drawable.ic_dialog_map))
+        tab_layout.addTab(tab_layout.newTab().setIcon(android.R.drawable.ic_dialog_info))
 
         val adapter = TabPagerAdapter(supportFragmentManager,
                 tab_layout.tabCount)
