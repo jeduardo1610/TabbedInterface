@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TabbedInterface</string>
+
+    <string name="tab1Fragment">Hello blank fragment 1</string>
+    <string name="tab2Fragment">Hello blank fragment 2</string>
+    <string name="tab3Fragment">Hello blank fragment 3</string>
+    <string name="tab4Fragment">Hello blank fragment 4</string>
 </resources>
